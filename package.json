@@ -1,0 +1,51 @@
+{
+  "name": "cph-leetcode",
+  "displayName": "CPH LeetCode",
+  "description": "CPH LeetCode extension for Visual Studio Code, designed to fetch and run LeetCode problem test cases locally, supporting multiple languages like Python, C++, and C. Simplify local testing and debugging with LeetCode problems without needing to manually copy test cases.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Testing"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cph-leetcode.fetchTestCases",
+        "title": "Fetch LeetCode Test Cases"
+      },
+      {
+        "command": "cph-leetcode.runSolution",
+        "title": "Run Solution"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^5.4.7",
+    "child_process": "^1.0.2",
+    "puppeteer": "^23.11.1"
+  }
+}
