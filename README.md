@@ -1,6 +1,6 @@
 # CPH LeetCode Extension
 
-This repository contains a custom Visual Studio Code (VS Code) extension, cph-leetcode, designed to simplify the process of fetching LeetCode test cases, parsing them, and running your solutions against the test cases. It is a comprehensive workflow combining all steps into a single command.
+This repository hosts a custom Visual Studio Code (VS Code) extension named QuickCode, built to streamline the workflow of acquiring, structuring, and validating task data with your custom scripts. It’s an integrated tool designed to bring automation and simplicity to your testing process.
 
 ## Features
 
@@ -38,8 +38,8 @@ npm install -g yo generator-code
 
 ### Step 2: Clone This Repository
 
-git clone https://github.com/your-username/cph-leetcode-extension.git
-cd cph-leetcode-extension
+git clone https://github.com/Avani1818/QuickCode-Codehelp.git
+cd QuickCode-Codehelp
 
 ### Step 3: Install Dependencies
 
